@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="google-site-verification" content="K9L2Qr3PbNU9JqePKL5GNpoh8dacTiM7CoM7LDscVD4" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Boost your website and YouTube channel with Soiyod Sohag Mir, an SEO expert in Bangladesh. Proven strategies to rank higher, drive traffic, and grow your audience." />
+    <link rel="icon" type="image/jpeg" href="/favicon.jpeg" />
+    <link rel="apple-touch-icon" href="/favicon.jpeg" />
+    <title>Website SEO & YouTube SEO Strategist – Soiyod Sohag Mir</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #020617; /* Deepest Navy */
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+      
+      .bg-vibrant {
+        background: radial-gradient(circle at 50% 50%, #1e1b4b 0%, #020617 100%);
+        position: relative;
+      }
+
+      .bg-vibrant::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, #4c1d95 0%, transparent 25%, #701a75 50%, transparent 75%, #1e1b4b 100%);
+        opacity: 0.15;
+        z-index: -1;
+        animation: pulse 10s ease-in-out infinite alternate;
+      }
+
+      @keyframes pulse {
+        0% { opacity: 0.1; transform: scale(1); }
+        100% { opacity: 0.2; transform: scale(1.1); }
+      }
+
+      .glass-card {
+        background: rgba(15, 23, 42, 0.3);
+        backdrop-filter: blur(32px);
+        -webkit-backdrop-filter: blur(32px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+      }
+
+      .glass-card-accent {
+        background: rgba(76, 29, 149, 0.15);
+        backdrop-filter: blur(32px);
+        -webkit-backdrop-filter: blur(32px);
+        border: 1px solid rgba(217, 70, 239, 0.25);
+        box-shadow: 0 0 50px -10px rgba(192, 38, 211, 0.2);
+      }
+
+      .glass-card-dark {
+        background: rgba(2, 6, 23, 0.7);
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        box-shadow: 0 12px 64px 0 rgba(0, 0, 0, 0.7);
+      }
+
+      .neon-glow-fuchsia {
+        box-shadow: 0 0 20px rgba(217, 70, 239, 0.4);
+      }
+
+      .neon-glow-purple {
+        box-shadow: 0 0 20px rgba(147, 51, 234, 0.4);
+      }
+      
+      /* Reveal Animation Styles */
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1);
+        will-change: transform, opacity;
+      }
+      
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .reveal-scale {
+        opacity: 0;
+        transform: scale(0.96);
+        transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+        will-change: transform, opacity;
+      }
+
+      .reveal-scale.active {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      /* Scrollbar Styling */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #020617;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e293b;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #4c1d95;
+      }
+
+      /* Fullscreen Viewer Styles */
+      .fullscreen-viewer-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        background: rgba(2, 6, 23, 0.97);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        animation: fadeIn 0.3s ease-out;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .fullscreen-viewer-topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 24px;
+        background: rgba(15, 23, 42, 0.8);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .fullscreen-viewer-btn {
+        padding: 10px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .fullscreen-viewer-btn:hover:not(:disabled) {
+        background: rgba(147, 51, 234, 0.3);
+        border-color: rgba(147, 51, 234, 0.5);
+      }
+
+      .fullscreen-viewer-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+
+      .fullscreen-viewer-btn-close {
+        padding: 10px;
+        border-radius: 12px;
+        background: rgba(239, 68, 68, 0.2);
+        border: 1px solid rgba(239, 68, 68, 0.3);
+        color: #ef4444;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-left: 16px;
+      }
+
+      .fullscreen-viewer-btn-close:hover {
+        background: rgba(239, 68, 68, 0.4);
+        border-color: rgba(239, 68, 68, 0.6);
+      }
+
+      .fullscreen-viewer-content {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 24px;
+      }
+
+      .fullscreen-viewer-image {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        transition: transform 0.2s ease;
+        border-radius: 12px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        user-select: none;
+      }
+
+      .fullscreen-viewer-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 16px;
+        border-radius: 50%;
+        background: rgba(15, 23, 42, 0.9);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 10;
+      }
+
+      .fullscreen-viewer-nav:hover {
+        background: rgba(147, 51, 234, 0.4);
+        border-color: rgba(147, 51, 234, 0.6);
+        transform: translateY(-50%) scale(1.1);
+      }
+
+      .fullscreen-viewer-nav-prev {
+        left: 24px;
+      }
+
+      .fullscreen-viewer-nav-next {
+        right: 24px;
+      }
+
+      .fullscreen-viewer-thumbnails {
+        padding: 16px 0;
+        background: rgba(15, 23, 42, 0.8);
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        overflow-x: auto;
+      }
+
+      .fullscreen-viewer-thumbnail {
+        flex-shrink: 0;
+        width: 80px;
+        height: 50px;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        opacity: 0.5;
+        background: none;
+        padding: 0;
+      }
+
+      .fullscreen-viewer-thumbnail:hover {
+        opacity: 0.8;
+        border-color: rgba(147, 51, 234, 0.4);
+      }
+
+      .fullscreen-viewer-thumbnail-active {
+        opacity: 1;
+        border-color: #a855f7;
+        box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+      }
+
+      .scrollbar-thin::-webkit-scrollbar {
+        height: 6px;
+      }
+
+      .scrollbar-thin::-webkit-scrollbar-track {
+        background: rgba(15, 23, 42, 0.5);
+        border-radius: 3px;
+      }
+
+      .scrollbar-thin::-webkit-scrollbar-thumb {
+        background: rgba(147, 51, 234, 0.4);
+        border-radius: 3px;
+      }
+
+      .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+        background: rgba(147, 51, 234, 0.6);
+      }
+
+      /* Mobile responsive adjustments for fullscreen viewer */
+      @media (max-width: 768px) {
+        .fullscreen-viewer-nav-prev {
+          left: 8px;
+        }
+
+        .fullscreen-viewer-nav-next {
+          right: 8px;
+        }
+
+        .fullscreen-viewer-nav {
+          padding: 12px;
+        }
+
+        .fullscreen-viewer-thumbnail {
+          width: 60px;
+          height: 38px;
+        }
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-C8e7d_Tc.js"></script>
+</head>
+  <body class="bg-vibrant">
+    <div id="root"></div>
+</body>
+</html>
